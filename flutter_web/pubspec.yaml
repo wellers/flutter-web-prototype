@@ -1,0 +1,28 @@
+name: flutter_web
+description: A prototype Flutter web application.
+
+environment:
+  sdk: '2.16.2'
+
+dependencies:
+  http: '0.13.4'
+  flutter:
+    sdk: flutter
+  flutter_redux_navigation: '0.7.1'
+  flutter_dotenv: '5.0.2'  
+  dart_graphql_client: '1.0.0'
+
+dev_dependencies:
+  redux: "5.0.0"
+  flutter_redux: "0.9.0"
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  dart_graphql_client:
+    path: ../dart_graphql_client
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/.env
