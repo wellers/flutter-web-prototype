@@ -52,7 +52,7 @@ class _ViewModel {
         store.dispatch(UpdateCustomerAction(id: customer.id, customer: customer.copyWith(name: name, age: int.parse(age))));
       },
       onBack: () {
-        store.dispatch(NavigateToAction.push(Routes.listCustomers));
+        store.dispatch(NavigateToAction.replace(Routes.listCustomers));
       }
     );
   }  

@@ -80,10 +80,10 @@ class _ViewModel {
         store.dispatch(AddCustomerAction(customer: CustomerInput.fromCustomer(customer)));
       },
       onAdd: () {        
-        store.dispatch(NavigateToAction.push(Routes.addCustomer));
+        store.dispatch(NavigateToAction.replace(Routes.addCustomer));
       },
       onEdit: (id) {
-        store.dispatch(NavigateToAction.push(Routes.editCustomer(id)));
+        store.dispatch(NavigateToAction.replace(Routes.editCustomer(id)));
       }
     );
   }  
